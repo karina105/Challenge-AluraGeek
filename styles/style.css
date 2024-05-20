@@ -1,0 +1,366 @@
+*,
+*::before,
+*::after {
+    --encabezado-y-pie-de-pagina: #114232;
+    --contenedor-productos-borde: #561C24;
+    --items-productos: #9C2C77;
+    --contenedor-formulario: #43766C;
+    --boton-enviar: #FC4100;
+    --boton-limpiar: #9D9D9D;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFEE6;
+}
+
+/*Personalización del encabezado de la pagina*/
+
+.encabezado,
+.pie_pagina {
+    background-color: var(--encabezado-y-pie-de-pagina);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.titulo_encabezado_pie_de_pagina {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+/*Personalización del main */
+.main-contenido {
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*Personalización de las secciones productos y formulario*/
+.section-productos,
+.section-formulario {
+    padding: 2em;
+    box-sizing: border-box;
+    margin-top: 30px;
+
+}
+
+/*Seccion productos*/
+.section-productos {
+    width: 50%;
+    background-color: transparent;
+    margin-right: 8%;
+
+}
+
+.titulo-productos {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background-color: wheat;
+    box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
+    border: 3px solid var(--contenedor-productos-borde);
+}
+
+.producto-item {
+    background-color: var(--items-productos);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.producto-descripcion,
+.producto-precio {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    line-height: 1.5;
+}
+
+.icono-borrar {
+    background-color: transparent;
+    border: none;
+}
+
+.icono-basurero {
+    margin-top: auto;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.icono-basurero img {
+    width: 24px;
+    height: 24px;
+}
+
+/*Sección formulario*/
+.section-formulario {
+    width: 30%;
+    background-color: var(--contenedor-formulario);
+    align-self: flex-start;
+}
+
+.titulo-formulario {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.formulario-agregar-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-producto::placeholder {
+    font-size: 15px;
+    margin-bottom: 0.5em;
+}
+
+.input-producto {
+    width: 100%;
+    height: 40px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/*Personalización de los botones*/
+.formulario-botones {
+    display: flex;
+    height: auto;
+    gap: 1em;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-enviar,
+.boton-limpiar {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+
+/*Boton enviar*/
+
+.boton-enviar {
+    background-color: var(--boton-enviar);
+    color: white;
+    font-weight: bold;
+}
+
+.boton-enviar:hover {
+    transform: scale(1.1);
+}
+
+/*Boton limpiar*/
+
+.boton-limpiar {
+    background-color: var(--boton-limpiar);
+    color: white;
+    font-weight: bold;
+}
+
+.boton-limpiar:hover {
+    transform: scale(1.1);
+}
+
+/*Personalización de footer*/
+
+.pie_pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    margin-top: 50px;
+}
+
+.footer-logo-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.redes-sociales-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Media querie */
+@media (max-width: 700px) {
+
+    .encabezado,
+    .pie_pagina {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .main-contenido {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-formulario,
+    .section-productos {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex: 1;
+
+    }
+
+    .section-formulario {
+        margin-bottom: 20px;
+        width: 100%;
+
+    }
+
+    .formulario-botones {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .section-productos {
+        width: 100%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .producto-descripcion,
+    .producto-precio,
+    .icono-basurero {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    .icono-basurero {
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    .producto-item {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .encabezado,
+    .pie_pagina {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .main-contenido {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-formulario,
+    .section-productos {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex: none;
+
+    }
+
+    .section-formulario {
+        margin-bottom: 20px;
+        width: 90%;
+
+    }
+
+    .section-productos {
+        width: 90%;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .producto-descripcion,
+    .producto-precio,
+    .icono-basurero {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    .icono-basurero {
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    .producto-item {
+        flex-wrap: wrap;
+    }
+
+    .producto-imagen img {
+        flex: 1;
+    }
+
+}
