@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="titulo_encabezado_pie_de_pagina">AluraGeek</h1>
+    </header>
+
+    <main class="main-contenido">
+        <!--Inicio de productos-->
+        <section class="section-productos">
+            <h2 class="titulo-productos">Mis Productos</h2>
+            <div class="producto-container" data-producto>
+                <!--<div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/tasas emoticones.jpg" alt="Tasa emoticones">
+                    <p class="producto-descripcion">Tasa decorada</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/llavero viaje.webp" alt="Llaveros">
+                    <p class="producto-descripcion">Llavero Personalizado</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/lapicero-plastico-EBL0020.jpg" alt="Boligrafos">
+                    <p class="producto-descripcion">Bolígrafos</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/Minions.webp" alt="Tasa Minions">
+                    <p class="producto-descripcion">Tasa decorada</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/llavero.jpg" alt="Llaveros">
+                    <p class="producto-descripcion">Llavero Personalizado</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/Lapiceros.jpg" alt="Bolígrafos">
+                    <p class="producto-descripcion">Bolígrafos</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/tasa personalizada.jpg" alt="Tasa Minions">
+                    <p class="producto-descripcion">Tasa decorada</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/llaveros-arbol.webp" alt="Llaveros">
+                    <p class="producto-descripcion">Llavero Personalizado</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+                <div class="producto-item">
+                    <img class="producto-imagen" src="imagenes/boligrafos.jpg" alt="Bolígrafos">
+                    <p class="producto-descripcion">Bolígrafos</p>
+                    <p class="producto-precio">$ 20</p>
+                    <button class="icono-borrar" data-id="${id}">
+                        <div class="icono-basurero">
+                            <img src="imagenes/🦆 icon _trash 2_.png" alt="Eliminar">
+                        </div>
+                    </button>
+                </div>
+            </div>-->
+        </section>
+
+        <!--Inicio sección formulario-->
+        <section class="section-formulario">
+            <h2 class="titulo-formulario">Agregar Producto</h2>
+
+            <!--Formulario-->
+            <form class="formulario-agregar-producto" data-form>
+                <fieldset class="formulario-producto">
+                    <input name="nombre" id="nombre" class="input-producto" placeholder="Nombre" type="text"
+                        data-nombre />
+                </fieldset>
+                <fieldset class="formulario-producto">
+                    <input name="precio" id="precio" class="input-producto" placeholder="Precio" type="text"
+                        data-precio />
+                </fieldset>
+                <fieldset class="formulario-producto">
+                    <input name="imagen" id="imagen" class="input-producto" placeholder="Imagen" type="text"
+                        data-imagen />
+                </fieldset>
+                <div class="formulario-botones">
+                    <button type="submit" class="boton-enviar" id="btn">Enviar</button>
+                    <button type="reset" class="boton-limpiar" id="btn">Limpiar</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <!--Inicio Footer-->
+    <footer class="pie_pagina">
+        <h1 class="titulo_encabezado_pie_de_pagina">AluraGeek</h1>
+        <p class="copyright">Karina Monge Rojas</p>
+        <p class="copyright">Alura Latam - 2024</p>
+        <div class="footer-logo-container">
+            <a href="https://www.linkedin.com/in/karina-monge-rojas/" target="_blank">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/linkedin.png" alt="linkedin"
+                    class="redes-sociales-logo" />
+            </a>
+
+            <a href="https://github.com/karina105" target="_blank">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/github.png" alt="github"
+                    class="redes-sociales-logo" />
+            </a>
+        </div>
+    </footer>
+    <script src="js/controllers/main.js" type="module"></script>
+</body>
+
+</html>
