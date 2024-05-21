@@ -1,13 +1,15 @@
+const apiUrl = "https://tu-api-vercel-url.vercel.app"; //  URL de la API desplegada en Vercel
+
 // Funciones para la página web
 
 const productList = () => {
-    return fetch("http://localhost:3000/productos")
+    return fetch(`${apiUrl}/productos`)
         .then((res) => res.json())
         .catch((err) => console.log(err));
 };
 
 const createProducts = (nombre, precio, imagen) => {
-    return fetch("http://localhost:3000/productos", {
+    return fetch(`${apiUrl}/productos`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -24,7 +26,7 @@ const createProducts = (nombre, precio, imagen) => {
 };
 
 const deleteProduct = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`${apiUrl}/productos/${id}`, {
         method: "DELETE"
     })
         .then(res => res.json())
