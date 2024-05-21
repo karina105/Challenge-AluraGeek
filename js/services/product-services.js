@@ -1,4 +1,4 @@
-const apiUrl = "https://tu-api-vercel-url.vercel.app"; //  URL de la API desplegada en Vercel
+const apiUrl = "https://challenge-alura-geek-liart.vercel.app/"; //  URL de la API desplegada en Vercel
 
 // Funciones para la página web
 
