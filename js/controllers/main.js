@@ -68,14 +68,7 @@ form.addEventListener("submit", (event) => {
     servicesProducts
         .createProducts(nombre, precio, imagen)
         .then((res) => {
-            // Limpiar el formulario después de agregar el producto
-            document.querySelector("[data-nombre]").value = '';
-            document.querySelector("[data-precio]").value = '';
-            document.querySelector("[data-imagen]").value = '';
-
-            productoContainer.appendChild(
-                createcard(nombre, precio, imagen, res.id)
-            );
+            console.log(res);
         })
         .catch((err) => console.log(err))
 });
