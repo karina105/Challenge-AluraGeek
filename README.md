@@ -9,16 +9,16 @@ La aplicación se construyó siguiendo un proceso de desarrollo paso a paso:
 - Funcionalidades JavaScript: Se implementaron diversas funciones JavaScript para la interacción dinámica con la aplicación. Estas funciones, desarrolladas como funciones asíncronas, permiten listar los productos existentes, registrar nuevos productos y eliminar productos seleccionados. Para mantener la persistencia de los datos y asegurar la funcionalidad en entornos de desarrollo, se creó una API utilizando un archivo JSON (db.json) y se implementaron funciones de solicitud HTTP utilizando fetch.
 
 <h2>Tecnologías Utilizadas</h2>
-- HTML5.
-- CSS3.
-- JavaScript (ES6+)
-- JSON
-- GitHub Pages (para la implementación y hospedaje del sitio web)
+ - HTML5.
+ - CSS3.
+ - JavaScript (ES6+)
+ - JSON
+ - GitHub Pages (para la implementación y hospedaje del sitio web)
 
 <h2>Instrucciones de Uso</h2>
-1. Listar Productos: La página mostrará todos los productos actualmente registrados en la base de datos.
-2. Agregar Producto: Completa el formulario de registro con el nombre, precio e imagen mediante una <strong>URL</strong> del nuevo producto y haz clic en el botón "Enviar". El producto se agregará automáticamente a la lista después de un breve intervalo de tiempo.
-3. Eliminar Producto: Haz clic en el ícono de basurero asociado al producto que deseas eliminar. El producto será eliminado de la lista y de la base de datos.
+- Listar Productos: La página mostrará todos los productos actualmente registrados en la base de datos.
+- Agregar Producto: Completa el formulario de registro con el nombre, precio e imagen mediante una <strong>URL</strong> del nuevo producto y haz clic en el botón "Enviar". El producto se agregará automáticamente a la lista después de un breve intervalo de tiempo.
+- Eliminar Producto: Haz clic en el ícono de basurero asociado al producto que deseas eliminar. El producto será eliminado de la lista y de la base de datos.
 
 <h3>Autor</h3>
 Karina Monge Rojas
