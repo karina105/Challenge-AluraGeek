@@ -9,11 +9,11 @@ La aplicación se construyó siguiendo un proceso de desarrollo paso a paso:
 - Funcionalidades JavaScript: Se implementaron diversas funciones JavaScript para la interacción dinámica con la aplicación. Estas funciones, desarrolladas como funciones asíncronas, permiten listar los productos existentes, registrar nuevos productos y eliminar productos seleccionados. Para mantener la persistencia de los datos y asegurar la funcionalidad en entornos de desarrollo, se creó una API utilizando un archivo JSON (db.json) y se implementaron funciones de solicitud HTTP utilizando fetch.
 
 <h2>Tecnologías Utilizadas</h2>
- - HTML5.
- - CSS3.
- - JavaScript (ES6+)
- - JSON
- - GitHub Pages (para la implementación y hospedaje del sitio web)
+ -HTML5.
+ -CSS3.
+ -JavaScript (ES6+)
+ -JSON
+ -GitHub Pages (para la implementación y hospedaje del sitio web)
 
 <h2>Instrucciones de Uso</h2>
 - Listar Productos: La página mostrará todos los productos actualmente registrados en la base de datos.
